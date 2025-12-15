@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML Cheat Sheet</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-neon">
+  <nav>
+    <div class="nav-left">
+      <div class="logo">BJ</div>
+      <div class="site-name">HTML Cheat Sheet</div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+
+  </nav>
+
+  <main class="container cheat" data-reveal>
+    <div class="cheat-top">
+      <input id="cheat-filter" placeholder="Filter tags (e.g., img, table, form)" />
+    </div>
+
+    <table id="cheat-table">
+      <thead>
+        <tr><th>Element</th><th>Usage</th><th>Example</th><th>Copy</th></tr>
+      </thead>
+        <tbody>
+
+        <tr data-tag="h1 h2 h3 h4 h5 h6">
+            <td>&lt;h1&gt;–&lt;h6&gt;</td>
+            <td>Headings</td>
+            <td><pre>&lt;h2&gt;Section Title&lt;/h2&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<h2>Section Title</h2>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="p">
+            <td>&lt;p&gt;</td>
+            <td>Paragraph</td>
+            <td><pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<p>This is a paragraph.</p>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="a">
+            <td>&lt;a&gt;</td>
+            <td>Links</td>
+            <td><pre>&lt;a href=&quot;#&quot;&gt;Click me&lt;/a&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<a href='#'>Click me</a>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="img">
+            <td>&lt;img&gt;</td>
+            <td>Images</td>
+            <td><pre>&lt;img src=&quot;photo.jpg&quot; alt=&quot;desc&quot;&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<img src='photo.jpg' alt='desc'>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="div">
+            <td>&lt;div&gt;</td>
+            <td>Block container</td>
+            <td><pre>&lt;div&gt;Content&lt;/div&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<div>Content</div>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="span">
+            <td>&lt;span&gt;</td>
+            <td>Inline container</td>
+            <td><pre>&lt;span&gt;Text&lt;/span&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<span>Text</span>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="ul">
+            <td>&lt;ul&gt;</td>
+            <td>Unordered list</td>
+            <td><pre>&lt;ul&gt;&#10;  &lt;li&gt;Item&lt;/li&gt;&#10;&lt;/ul&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<ul><li>Item</li></ul>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="ol">
+            <td>&lt;ol&gt;</td>
+            <td>Ordered list</td>
+            <td><pre>&lt;ol&gt;&#10;  &lt;li&gt;Item&lt;/li&gt;&#10;&lt;/ol&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<ol><li>Item</li></ol>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="li">
+            <td>&lt;li&gt;</td>
+            <td>List item</td>
+            <td><pre>&lt;li&gt;Item&lt;/li&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<li>Item</li>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="table">
+            <td>&lt;table&gt;</td>
+            <td>Table element</td>
+            <td><pre>&lt;table&gt;...&lt;/table&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<table>...</table>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="tr">
+            <td>&lt;tr&gt;</td>
+            <td>Table row</td>
+            <td><pre>&lt;tr&gt;...&lt;/tr&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<tr>...</tr>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="td">
+            <td>&lt;td&gt;</td>
+            <td>Table cell</td>
+            <td><pre>&lt;td&gt;Data&lt;/td&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<td>Data</td>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="form">
+            <td>&lt;form&gt;</td>
+            <td>Form container</td>
+            <td><pre>&lt;form&gt;...&lt;/form&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<form>...</form>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="input">
+            <td>&lt;input&gt;</td>
+            <td>Input field</td>
+            <td><pre>&lt;input type=&quot;text&quot;&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<input type='text'>">Copy</button></td>
+        </tr>
+
+        <tr data-tag="button">
+            <td>&lt;button&gt;</td>
+            <td>Button element</td>
+            <td><pre>&lt;button&gt;Click&lt;/button&gt;</pre></td>
+            <td><button class="copy-btn" data-snippet="<button>Click</button>">Copy</button></td>
+        </tr>
+
+        </tbody>
+
+    </table>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
